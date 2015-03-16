@@ -1,0 +1,26 @@
+﻿<Controls:MetroWindow x:Class="TVShowRenamer.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Settings" Height="300" Width="250">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <CheckBox Name="checkboxLightTheme" Content="Use light theme" Margin="5" Loaded="checkboxLightTheme_Loaded" Unchecked="checkboxLightTheme_Unchecked" Checked="checkboxLightTheme_Checked"/>
+            <CheckBox Name="checkboxTitleCase" Content="Title Casing (to,and etc. lowercase)" Margin="5" Loaded="checkboxTitleCase_Loaded"  Checked="checkboxTitleCase_Checked" Unchecked="checkboxTitleCase_Unchecked"/>
+            <CheckBox Name="checkboxDefaultLib" Content="Move files to library directory" Margin="5" Loaded="checkboxDefaultLib_Loaded" Checked="checkboxDefaultLib_Checked" Unchecked="checkboxDefaultLib_Unchecked" />
+            <CheckBox Name="checkboxMoveToShowFolder" Content="Move to shows folder if found" Margin="30,5,5,5" Loaded="checkboxMoveToShowFolder_Loaded" Checked="checkboxMoveToShowFolder_Checked" Unchecked="checkboxMoveToShowFolder_Unchecked"/>
+            <Button Name="btnBrowseLibDir" Content="Browse library directory" Margin="5" Click="btnBrowseLibDir_Click" MinWidth="80"/>
+            <TextBlock Name="textblockLibDir" Text="{Binding UpdateSourceTrigger=PropertyChanged}" Margin="5" MinWidth="150" Loaded="textblockLibDir_Loaded"/>
+            <Button Name="btnBrowseDefaultDir" Content="Browse default browse directory" Margin="5" Click="btnBrowseDefaultDir_Click" MinWidth="80"/>
+            <TextBlock Name="textblockDefaultDir" Text="" MinWidth="150" Margin="5" Loaded="textblockDefaultDir_Loaded"/>
+            <TextBox Name="textboxChooseSyntax" Text="" TextChanged="textboxChooseSyntax_TextChanged"  MinWidth="150" Margin="5" Loaded="textboxChooseSyntax_Loaded"/>
+            
+            
+            
+            
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
