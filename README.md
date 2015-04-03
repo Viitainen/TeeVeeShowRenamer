@@ -1,7 +1,7 @@
 # TeeVeeShowRenamer
 Repo for my TV Show Renaming Software
 
-This is my first real application. It's made with C#. If you want to use it, you can download it from https://www.dropbox.com/s/d6xvb7bbte55kqt/TeeVeeShowRenamer.rar?dl=0 
+This is my first real application. It's made with C#. If you want to use it, you can download it from https://www.dropbox.com/s/8nebyr3k4c0ytda/TEEVEESHOWRENAMER.zip?dl=0 
 
 The renamer takes video and subtitlefiles, trims the spaces/dots/ etc, tries to find the shows name, episode number and season number. It will delete all words after the season number + episode number so there will be no episode name in the new file name. It does not use any API:s to get these information.
 It then merges these to make a new name based on the users pattern/syntax. For example "showsname - Sseason numberEepisode number".
